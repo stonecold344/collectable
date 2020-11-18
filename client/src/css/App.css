@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  overflow: auto;
+  height: 100%;
+}
+.home {
+  background-image: url("../images/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.signup {
+  background-image: url("../images/signup-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.signin {
+  background-image: url("../images/signin-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.store {
+  background-image: url("../images/store-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.error{
+    background-image: url("../images/error-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cart{
+  background-image: url("../images/cart-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.details{
+  background-image: url("../images/product-details-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile{
+  background-image: url("../images/profile-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cart:hover{
+  color:yellowgreen;
+}
+.home-card{
+    background-color:transparent;
+    border:double !important;
+    border-style: double;
+    border-color:rgb(56, 59, 90);
+    transition:all 1s linear
+}
+.home-card:hover{
+    transform: scale(1.2, 1.2);
+    border:blue;
+    transition:all 1s linear
+}
+
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+.divider-text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+.btn-facebook {
+  background-color: #405d9d;
+  color: #fff;
+}
+.btn-twitter {
+  background-color: #42aeec;
+  color: #fff;
+}
+
+#signin:hover {
+  color: green;
+}
+
+#signup:hover {
+  color: rgb(123, 123, 231);
+}
+
+#logout:hover {
+  color: rgb(245, 52, 4);
+}
+
+#hr-top {
+  margin: 0 15%;
+}
+
+#para {
+  line-height: 1.7rem;
+  color: white;
+}
+
+#hr-bot {
+  margin: 10% 15% 5%;
+}
+
+#add-item:hover {
+  text-decoration-color: white;
+}
+.link-text{
+    text-decoration: none !important;
+    font-family: Apple Chancery, cursive;
+}
+.site-title{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+#dashboard:hover{
+  color:#42aeec;
+}
+
+
+/* Style the search field */
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  border-radius: 25px;
+  outline: none;
+}
+
+/* Style the submit button */
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #6b95b8;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  border-radius: 25px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  outline: none;
+}
+
+form.search button:hover {
+  background: #1874c0;
+  transition: transform 1s;
+  transform: rotateX(360deg);
+}
+
+form.search button:active {
+  background:  #6b95b8;
+}
+
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sort-buttons button{
+  margin-left: 5px;
+  border-radius: 5px 5px 5px 5px;
+  border:2px solid black;
+  cursor: pointer;
+  outline: none;
+  max-width: fit-content;
+}
+
+.sort-buttons button:hover{
+  color: white;
+  background-color: #6b9995;
+  border:2px solid black;
+}
+
+
+
+.filter li{
+  color: white;
+  background-color:transparent;
+}
+
+#details {
+    padding: 30px 50px;
+    min-height: 300px
+}
+
+input {
+    border: none;
+    outline: none
+}
+
+.form-group .d-flex {
+    border: 1px solid #ddd
+}
+
+.form-group .d-flex input {
+    width: 95%
+}
+
+.form-group .d-flex:hover {
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #008000
+}
+
+select {
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px
+}
+
+
+#cart,
+#summary {
+    max-width: 500px
+}
+
+.h6 {
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+.h6 a {
+    text-decoration: none;
+    font-size: 1rem
+}
+
+.item img {
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.item {
+    position: relative
+}
+
+.number {
+    position: absolute;
+    font-weight: 800;
+    color: #fff;
+    background-color: #0033ff;
+    padding-left: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    right: -5px
+}
+
+
+
+.btn.text-uppercase {
+    border: 1px solid #333;
+    font-weight: 600;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+/* .btn.text-uppercase:hover {
+    background-color: #333;
+    color: #eee
+} */
+
+.btn.text-white {
+    background-color: #66cdaa;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+.btn.text-white:hover {
+    background-color: #3cb371;
+    text-decoration: none;
+
+}
+
+.wrapper .row+div.text-muted {
+    font-size: 0.9rem
+}
+
+
+
+.buttons {
+    vertical-align: text-bottom
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  /* background-color: transparent; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  /* position: relative; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0%;
+  -webkit-backface-visibility: hidden; 
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+input[type=file] {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* width: 150px; */
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.avatar-preview{
+  position:relative;
+  margin-top:10px;
+}
+
+.avatar-img{
+  width: 280px !important; 
+  height:280px !important;
+}
