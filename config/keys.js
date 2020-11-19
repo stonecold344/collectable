@@ -1,6 +1,6 @@
-const LIVE = false
+// const LIVE = false
 
-if(LIVE) {
+if(process.env.NODE_ENV === 'production') {
     module.exports = require('./prod.js')
 }
 else {
