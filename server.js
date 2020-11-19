@@ -33,7 +33,7 @@ app.get('/', (req,res) => {
     res.send("Inside Server")
 })
 
-const port = process.env.PORT || 5000
+let port = process.env.PORT || 5000
 
 
 if(process.env.NODE === "production"){
